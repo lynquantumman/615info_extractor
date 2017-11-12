@@ -1,0 +1,6 @@
+Sens1.Sens1Port -> Inter.InterPort2
+Sens2.Sens2Port -> Inter.InterPort3
+Mem1.Mem1Port -> Pro1.Pro1Port
+Mem2.Mem2Port -> Pro2.Pro2Port
+Pro1.Pro1Port -> Inter.InterPort1
+Pro2.Pro2Port -> Inter.InterPort4

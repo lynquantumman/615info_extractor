@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="demo_system_impl_Instance" category="system">
+  <componentInstance name="bus12" category="bus">
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="bus13" category="bus">
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.1"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="bus23" category="bus">
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.2"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="politpole1" category="device">
+    <featureInstance name="dz" srcConnectionInstance="//@connectionInstance.0" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="politpole2" category="device">
+    <featureInstance name="dz" srcConnectionInstance="//@connectionInstance.1" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.1"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="politpole3" category="device">
+    <featureInstance name="dz" srcConnectionInstance="//@connectionInstance.2" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.2"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="ace1" category="device">
+    <featureInstance name="hstcmd" dstConnectionInstance="//@connectionInstance.3 //@connectionInstance.8 //@connectionInstance.12">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.3"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="ace2" category="device">
+    <featureInstance name="hstcmd" dstConnectionInstance="//@connectionInstance.4 //@connectionInstance.7 //@connectionInstance.13">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.4"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="ace3" category="device">
+    <featureInstance name="hstcmd" dstConnectionInstance="//@connectionInstance.5 //@connectionInstance.9 //@connectionInstance.11">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.5"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="alarm" category="device">
+    <featureInstance name="fail_flag1" dstConnectionInstance="//@connectionInstance.6">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="uint16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="fail_flag2" dstConnectionInstance="//@connectionInstance.10">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="uint16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance name="fail_flag3" dstConnectionInstance="//@connectionInstance.14">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="uint16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/Devices.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.2"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.6"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="pfc1" category="system">
+    <featureInstance name="pfc_connector" category="busAccess" direction="in out">
+      <feature xsi:type="aadl2:BusAccess" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+    </featureInstance>
+    <featureInstance name="pfc_ain_polit_cmd1" dstConnectionInstance="//@connectionInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="pfc_hst_cmd" srcConnectionInstance="//@connectionInstance.3 //@connectionInstance.4 //@connectionInstance.5" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance name="fail_flag" srcConnectionInstance="//@connectionInstance.6" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="uint16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.2"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="pfc2" category="system">
+    <featureInstance name="pfc_connector" category="busAccess" direction="in out">
+      <feature xsi:type="aadl2:BusAccess" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+    </featureInstance>
+    <featureInstance name="pfc_ain_polit_cmd1" dstConnectionInstance="//@connectionInstance.1">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="pfc_hst_cmd" srcConnectionInstance="//@connectionInstance.7 //@connectionInstance.8 //@connectionInstance.9" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance name="fail_flag" srcConnectionInstance="//@connectionInstance.10" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="uint16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.2"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.1"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance name="pfc3" category="system">
+    <featureInstance name="pfc_connector" category="busAccess" direction="in out">
+      <feature xsi:type="aadl2:BusAccess" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+    </featureInstance>
+    <featureInstance name="pfc_ain_polit_cmd1" dstConnectionInstance="//@connectionInstance.2">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="pfc_hst_cmd" srcConnectionInstance="//@connectionInstance.11 //@connectionInstance.12 //@connectionInstance.13" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="int16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance name="fail_flag" srcConnectionInstance="//@connectionInstance.14" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Type_Source_Name"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:StringLiteral" value="uint16"/>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Programming_Properties.aadl#Programming_Properties.Source_Text"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="aadl2:StringLiteral" value="types"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="../../Plugin_Resources/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="../../Plugin_Resources/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.11/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../packages/Datatype.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.2"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.2"/>
+    <index>0</index>
+  </componentInstance>
+  <connectionInstance name="politpole1.dz -> pfc1.pfc_ain_polit_cmd1" complete="true" kind="portConnection" destination="//@componentInstance.10/@featureInstance.1" source="//@componentInstance.3/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.3/@featureInstance.0" destination="//@componentInstance.10/@featureInstance.1">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="politpole2.dz -> pfc2.pfc_ain_polit_cmd1" complete="true" kind="portConnection" destination="//@componentInstance.11/@featureInstance.1" source="//@componentInstance.4/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.4/@featureInstance.0" destination="//@componentInstance.11/@featureInstance.1">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="politpole3.dz -> pfc3.pfc_ain_polit_cmd1" complete="true" kind="portConnection" destination="//@componentInstance.12/@featureInstance.1" source="//@componentInstance.5/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.5/@featureInstance.0" destination="//@componentInstance.12/@featureInstance.1">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc1.pfc_hst_cmd -> ace1.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.6/@featureInstance.0" source="//@componentInstance.10/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.10/@featureInstance.2" destination="//@componentInstance.6/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc1.pfc_hst_cmd -> ace2.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.7/@featureInstance.0" source="//@componentInstance.10/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.10/@featureInstance.2" destination="//@componentInstance.7/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.9"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc1.pfc_hst_cmd -> ace3.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.8/@featureInstance.0" source="//@componentInstance.10/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.10/@featureInstance.2" destination="//@componentInstance.8/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.10"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc1.fail_flag -> alarm.fail_flag1" complete="true" kind="portConnection" destination="//@componentInstance.9/@featureInstance.0" source="//@componentInstance.10/@featureInstance.3">
+    <connectionReference context="/" source="//@componentInstance.10/@featureInstance.3" destination="//@componentInstance.9/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.6"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc2.pfc_hst_cmd -> ace2.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.7/@featureInstance.0" source="//@componentInstance.11/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.7/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc2.pfc_hst_cmd -> ace1.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.6/@featureInstance.0" source="//@componentInstance.11/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.6/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.11"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc2.pfc_hst_cmd -> ace3.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.8/@featureInstance.0" source="//@componentInstance.11/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.8/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.12"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc2.fail_flag -> alarm.fail_flag2" complete="true" kind="portConnection" destination="//@componentInstance.9/@featureInstance.1" source="//@componentInstance.11/@featureInstance.3">
+    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.3" destination="//@componentInstance.9/@featureInstance.1">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.7"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc3.pfc_hst_cmd -> ace3.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.8/@featureInstance.0" source="//@componentInstance.12/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.12/@featureInstance.2" destination="//@componentInstance.8/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.5"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc3.pfc_hst_cmd -> ace1.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.6/@featureInstance.0" source="//@componentInstance.12/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.12/@featureInstance.2" destination="//@componentInstance.6/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.13"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc3.pfc_hst_cmd -> ace2.hstcmd" complete="true" kind="portConnection" destination="//@componentInstance.7/@featureInstance.0" source="//@componentInstance.12/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.12/@featureInstance.2" destination="//@componentInstance.7/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.14"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="pfc3.fail_flag -> alarm.fail_flag3" complete="true" kind="portConnection" destination="//@componentInstance.9/@featureInstance.2" source="//@componentInstance.12/@featureInstance.3">
+    <connectionReference context="/" source="//@componentInstance.12/@featureInstance.3" destination="//@componentInstance.9/@featureInstance.2">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/Systems.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.8"/>
+    </connectionReference>
+  </connectionInstance>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:SystemImplementation" href="../packages/Systems.aadl#Systems.demo_system.impl"/>
+</instance:SystemInstance>
