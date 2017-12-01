@@ -22,7 +22,7 @@ public class InfoExtractor{
     String softwareFile;
     String hardwareFile;
     String destinationDirectory;
-    Document doc;
+    
 //    software and hardware are independent files
 //    srcFile should be changed
     public InfoExtractor(String hardwareFile, String softwareFile, String destinationDirectory){
@@ -58,7 +58,7 @@ public class InfoExtractor{
 			hardwareStream = new FileInputStream(hardwareFile);
 			//========================================hardware println
 			SAXReader hardwareReader = new SAXReader();
-			Document hardwareDoc = hardwareReader.read(softwareStream);
+			Document hardwareDoc = hardwareReader.read(hardwareStream);
 			org.dom4j.Element hardRootElement = hardwareDoc.getRootElement();
 			List<org.dom4j.Element> hardElementsLikeComponents = hardRootElement.elements();
 			for (org.dom4j.Element itemLikeComponents : hardElementsLikeComponents) {
@@ -96,13 +96,14 @@ public class InfoExtractor{
 						String cpntName = itemLikeComponent.attribute("name").getValue();
 						componentPw.println(cpntName);
 					}
-				}else if ("connections".equals(itemLikeComponents.getName()) ) {
-					List<org.dom4j.Element> elementsLikeConnection = itemLikeComponents.elements();
-					for (org.dom4j.Element itemLikeConn : elementsLikeConnection) {
-						String cnnName = itemLikeConn.attribute("name").getValue();
-						connectionPw.println(cnnName);
-					}
 				}
+//				else if ("connections".equals(itemLikeComponents.getName()) ) {
+//					List<org.dom4j.Element> elementsLikeConnection = itemLikeComponents.elements();
+//					for (org.dom4j.Element itemLikeConn : elementsLikeConnection) {
+//						String cnnName = itemLikeConn.attribute("name").getValue();
+//						connectionPw.println(cnnName);
+//					}
+//				}
 			}
 			componentOs.flush();
 			componentPw.flush();
@@ -116,7 +117,7 @@ public class InfoExtractor{
 		} catch (DocumentException e) {
 			e.printStackTrace();
 		}finally{
-			if(softwareStream != null && componentOs!=null && connectionOs!=null){
+			if(softwareStream != null && hardwareStream !=null && componentOs!=null && connectionOs!=null){
 				try {
 					softwareStream.close();
 					hardwareStream.close();

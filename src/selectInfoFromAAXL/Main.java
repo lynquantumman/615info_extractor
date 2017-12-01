@@ -10,7 +10,7 @@ public class Main {
 			System.out.println("usage: the args should be in order like hardwareFile, softwareFile, destinationDirectory");
 			
 		}
-		else if(args.length==2){
+		else if(args.length==3){
 			hardwareFile = args[0];
 			softwareFile = args[1];
 			destinationDirectory = args[2];
